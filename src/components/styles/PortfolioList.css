@@ -1,0 +1,20 @@
+.PortfolioList {
+	padding: 10px;
+	.List {
+		list-style-type: none;
+	}
+	li {
+		border: 0.5px solid gray;
+		padding: 16px;
+		border-radius: 5px;
+		background-color: #4f5d75;
+		color: #f2e9e4;
+		margin-bottom: 10px;
+		margin-top: 16px;
+		.Button {
+			margin-left: 10px;
+			border-radius: 5px;
+			background-color: #ef8354;
+		}
+	}
+}

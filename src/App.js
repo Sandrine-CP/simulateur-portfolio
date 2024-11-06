@@ -14,6 +14,10 @@ function App() {
 		setPortfolio([...portfolio, newStock]);
 	};
 
+	const removeStock = (symbol) => {
+		setPortfolio(portfolio.filter((stock) => stock.symbol));
+	};
+
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -23,6 +27,7 @@ function App() {
 					portfolio={portfolio}
 					filter={filter}
 					setFilter={setFilter}
+					removeStock={removeStock}
 				/>
 			</header>
 		</div>

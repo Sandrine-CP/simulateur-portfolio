@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./styles/AddStock.css";
 
 function AddStock({ addStock }) {
 	// état du symbole de l'action
@@ -14,9 +15,9 @@ function AddStock({ addStock }) {
 	};
 
 	return (
-		<>
-			<h2>Ajouter une nouvelle action</h2>
-			<form onSubmit={handleSubmit}>
+		<div className="AddStock">
+			<h3>Ajouter une nouvelle action</h3>
+			<form className="Form" onSubmit={handleSubmit}>
 				<input
 					type="text"
 					placeholder="Ajouter un symbole d'action"
@@ -25,7 +26,7 @@ function AddStock({ addStock }) {
 				/>
 				<button type="submit">Ajouter</button>
 			</form>
-		</>
+		</div>
 	);
 }
 
