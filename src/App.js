@@ -21,15 +21,18 @@ function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<h1>Simulateur de portfolio boursier</h1>
-				<AddStock addStock={addStock} />
-				<PortfolioList
-					portfolio={portfolio}
-					filter={filter}
-					setFilter={setFilter}
-					removeStock={removeStock}
-				/>
+				<h1 className="Title">Simulateur de portfolio boursier</h1>
 			</header>
+			<AddStock addStock={addStock} />
+			<PortfolioList
+				portfolio={portfolio}
+				filter={filter}
+				setFilter={setFilter}
+				removeStock={removeStock}
+			/>
+			<footer className="Footer">
+				<p>Made with 💖 by Sandrine-CP</p>
+			</footer>
 		</div>
 	);
 }
